@@ -1,46 +1,61 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **Word Hierarchy Interface Project**
 
-## Available Scripts
+This project is a web interface developed using React and TypeScript, allowing users to create word hierarchies visually, save the hierarchy as a JSON file, and download it.
 
-In the project directory, you can run:
+## **Requirements**
 
-### `npm start`
+- **Node.js** version 14 or higher
+- **Docker** (to run the project in a container)
+- **Web Browser**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## **Installation and Local Execution**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   cd your-repository
+   ```
 
-### `npm test`
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Start the project:**
+   ```bash
+   npm start
+   ```
 
-### `npm run build`
+4. **Access the application:**
+   Open your browser and go to `http://localhost:3000`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Running with Docker**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Run the script to build and run the container:**
+   ```bash
+   ./build_and_run.sh
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Access the application in your browser:**
+   Open `http://localhost:3000` to view the application.
 
-### `npm run eject`
+## **Features**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Add hierarchical levels.
+- Visually display the hierarchy.
+- Save the hierarchy as a JSON file.
+- Download the generated JSON file.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## **Project Structure**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **src/**: Contains the main project code.
+  - **components/**: React components used in the interface.
+  - **HierarchyView.tsx**: Main component for creating and displaying the hierarchy.
+  - **App.tsx**: Main application component.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## **Available Scripts**
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `npm start`: Runs the application locally.
+- `npm run build`: Builds the project for production.
+- `./build_and_run.sh`: Builds the Docker image and runs the container.
